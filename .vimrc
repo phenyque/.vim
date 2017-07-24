@@ -1,10 +1,10 @@
 
+" Some remaps
 let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
-nnoremap <F5> :GundoToggle<CR>
 
 set tabstop=2
 set softtabstop=0 noexpandtab
@@ -36,19 +36,14 @@ let g:lightline = {
 set nocompatible
 filetype off
 
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
-
-" add new plugins here
-" Plugin 'VundleVim/Vundle.vim'
-" Plugin 'Valloric/YouCompleteMe'
-" Plugin 'bling/vim-airline'
-
-" call vundle#end()
+" Pathogen plugin activation
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
 
 " set python interpreter for ycmd to python 2
 let g:ycm_server_python_interpreter = 'python2'
 
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+" Solarized colorscheme
+set background=dark
+colorscheme solarized
