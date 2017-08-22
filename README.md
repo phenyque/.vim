@@ -10,3 +10,4 @@ Vim config repository
 - **nerdtree** File tree viewer
 - **solarized** Colorscheme
 - **YouCompleteMe** Code-Completion
+- **autoclose** automatically add closing parantheses and stuff
