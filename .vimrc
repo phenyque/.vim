@@ -5,9 +5,12 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>h :nohlsearch<CR>
 
 set tabstop=2
-set softtabstop=0 noexpandtab
+" set softtabstop=0 noexpandtab
+set expandtab
+set hlsearch
 
 " adjustment needed because lightline does not show up
 set laststatus=2
