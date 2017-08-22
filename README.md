@@ -16,10 +16,10 @@ Vim config repository
 *quick reminder for my amnesia self*
 
 Add new plugins that are on github as submodules!
-´´´
+```
 cd .vim
 git submodule add <Link-to-Github-Repo> bundle/<Plugin-name>
 git submodule init
 git submodule update
-´´´
+```
 **Once in a while run `git submodule` to fetch updates for the plugins!!**
