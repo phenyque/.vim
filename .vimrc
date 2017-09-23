@@ -1,4 +1,3 @@
-
 " Some remaps
 let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
@@ -7,10 +6,28 @@ nnoremap <Leader>Q :q!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>h :nohlsearch<CR>
 
-set tabstop=2
-" set softtabstop=0 noexpandtab
+" 'reusable' indentation with </>
+vnoremap < <gv
+vnoremap > >gv
+
+" tab adjustments
 set expandtab
+set shiftwidth=2
+set softtabstop=2
 set hlsearch
+
+" show line numbers and stuff
+set number
+set tw=79
+set nowrap
+set fo-=t
+set colorcolumn=80
+
+" automatically reload .vimrc
+autocmd! bufwritepost .vimrc source %
+
+" Copy and paste from system clipboard
+set clipboard=unnamed
 
 " adjustment needed because lightline does not show up
 set laststatus=2
@@ -25,19 +42,14 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 """ lightline config
 let g:lightline = {
-				\ 'active': {
-				\   'left': [ [ 'mode', 'paste' ],
-				\             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-				\ },
-				\ 'component_function': {
-				\   'gitbranch': 'fugitive#head'
-				\ },
-				\ }
-
-""" Vundle plugins
-
-set nocompatible
-filetype off
+    \ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+    \ },
+    \ 'component_function': {
+    \   'gitbranch': 'fugitive#head'
+    \ },
+    \ }
 
 " Pathogen plugin activation
 execute pathogen#infect()
