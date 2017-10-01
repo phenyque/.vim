@@ -29,6 +29,9 @@ set nowrap
 set fo-=t
 set colorcolumn=80
 
+" utf-8 encoding as default
+set encoding=utf-8
+
 " automatically reload .vimrc
 autocmd! bufwritepost .vimrc source %
 
@@ -68,6 +71,9 @@ let g:ycm_server_python_interpreter = 'python2'
 " global compile flags for ycm
 let g:ycm_global_ycm_extra_conf = '~/.vim/global_ycm_extra_conf.py'
 
+let g:ycm_autoclose_preview_window_after_completion=1
+
 " Solarized colorscheme
 set background=dark
 colorscheme solarized
+
