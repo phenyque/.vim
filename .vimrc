@@ -2,7 +2,7 @@
 let mapleader = "\<Space>"
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>qq :q!<CR>
+nnoremap <Leader>Q :q!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>h :nohlsearch<CR>
 nnoremap <Leader>s <C-w>w
