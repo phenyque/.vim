@@ -77,3 +77,7 @@ let g:ycm_autoclose_preview_window_after_completion=1
 set background=dark
 colorscheme solarized
 
+augroup HiglightTODO
+    autocmd!
+    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO', -1)
+augroup END
