@@ -81,3 +81,7 @@ let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}
 set background=dark
 colorscheme solarized
 
+augroup HiglightTODO
+    autocmd!
+    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO', -1)
+augroup END
