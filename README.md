@@ -27,6 +27,6 @@ git submodule update
 **When reinstalling YouCompleteMe run `git submodule update --init --recursive`**
 
 ### Notes to self
-- Dont set <Leader>- Combinations with more than one char since all single-char
+- Dont set Leader- Combinations with more than one char since all single-char
   combis will have to wait the full second (or so) that Leader waits for
   possible additional input
