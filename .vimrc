@@ -71,7 +71,11 @@ let g:ycm_server_python_interpreter = 'python2'
 " global compile flags for ycm
 let g:ycm_global_ycm_extra_conf = '~/.vim/global_ycm_extra_conf.py'
 
-let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_autoclose_preview_window_after_insertion=1
+let g:ycm_complete_in_comments=1
+
+" fix annoying problem with vim-autoclose and ycm completion window when hitting esc
+let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}
 
 " Solarized colorscheme
 set background=dark
