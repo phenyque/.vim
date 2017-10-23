@@ -29,6 +29,9 @@ set nowrap
 set fo-=t
 set colorcolumn=80
 
+" move cursor with mouse
+set mouse=a
+
 " utf-8 encoding as default
 set encoding=utf-8
 
@@ -81,6 +84,7 @@ let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}
 set background=dark
 colorscheme solarized
 
+" highlight TODO in files
 augroup HiglightTODO
     autocmd!
     autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO', -1)
