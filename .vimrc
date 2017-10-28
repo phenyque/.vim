@@ -6,6 +6,14 @@ nnoremap <Leader>Q :q!<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>h :nohlsearch<CR>
 nnoremap <Leader>s <C-w>w
+nnoremap <Leader>r :set relativenumber!<CR>
+
+" toggle relative and absolute line numbering automatically
+:augroup numbertoggle
+:   autocmd!
+:   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:   autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
+:augroup END
 
 " 'reusable' indentation with </>
 vnoremap < <gv
