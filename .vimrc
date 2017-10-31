@@ -7,6 +7,7 @@ nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>h :nohlsearch<CR>
 nnoremap <Leader>s <C-w>w
 nnoremap <Leader>r :set relativenumber!<CR>
+nnoremap <Leader>f :YcmCompleter FixIt<CR>
 
 " toggle relative and absolute line numbering automatically
 :augroup numbertoggle
