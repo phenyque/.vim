@@ -11,6 +11,7 @@ Vim config repository
 - **[solarized](https://github.com/altercation/vim-colors-solarized)** Colorscheme
 - **[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)** Code-Completion
 - **[autoclose](https://github.com/Valloric/YouCompleteMe)** automatically add closing parantheses and stuff
+- **[nerdcommenter](https://github.com/scrooloose/nerdcommenter)** (un-)comment blocks of code
 
 ### Add new plugins
 *quick reminder for my amnesia self*
