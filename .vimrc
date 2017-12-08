@@ -27,6 +27,7 @@ set softtabstop=2
 set hlsearch
 set incsearch
 set autoindent
+set smartcase
 
 filetype on
 filetype plugin on
@@ -92,7 +93,8 @@ let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}
 
 " Solarized colorscheme
 set background=dark
-colorscheme solarized
+"colorscheme solarized
+colorscheme happy_hacking
 
 " highlight TODO in files
 augroup HiglightTODO

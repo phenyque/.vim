@@ -31,3 +31,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/happy_hacking"]
+	path = bundle/happy_hacking
+	url = git@github.com:YorickPeterse/happy_hacking.vim
