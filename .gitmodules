@@ -34,3 +34,6 @@
 [submodule "bundle/happy_hacking"]
 	path = bundle/happy_hacking
 	url = git@github.com:YorickPeterse/happy_hacking.vim
+[submodule "bundle/indentLine"]
+	path = bundle/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
