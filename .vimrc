@@ -49,8 +49,19 @@ set encoding=utf-8
 " automatically reload .vimrc
 autocmd! bufwritepost .vimrc source %
 
-" Copy and paste from system clipboard
+" Copy and paste from system clipboard FIXME: this does not work somehow
 set clipboard=unnamed
+" Automatically activate paste mode when pasting in isert mode
+let &t_SI .= "\<Esc>[?2004h"
+let &t_EI .= "\<Esc>[?2004l"
+
+inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+function! XTermPasteBegin()
+  set pastetoggle=<Esc>[201~
+  set paste
+  return ""
+endfunction
 
 " adjustment needed because lightline does not show up
 set laststatus=2
