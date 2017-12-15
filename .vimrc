@@ -92,12 +92,21 @@ let g:ycm_complete_in_comments=1
 let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}
 
 " Solarized colorscheme
-set background=dark
+"set background=dark
 "colorscheme solarized
+"" The next few lines are only needed when using happy_hacking scheme
 colorscheme happy_hacking
+hi search cterm=none ctermfg=black ctermbg=red
 
 " highlight TODO in files
-augroup HiglightTODO
-    autocmd!
-    autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO', -1)
-augroup END
+"augroup HiglightTODO
+    "autocmd!
+    "autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO', -1)
+"augroup END
+if has("autocmd")
+  " Highlight TODO, FIXME, NOTE, etc.
+  if v:version > 701
+    autocmd WinEnter,VimEnter * :silent! call matchadd('WarningMsg',  '\W\zs\(TODO\|FIXME\|CHANGED\|XXX\|BUG\|HACK\)')
+    autocmd Winenter,VimEnter * :silent! call matchadd('ErrorMsg', '\W\zs\(NOTE\|INFO\|IDEA\)')
+  endif
+endif
