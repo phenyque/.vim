@@ -1,12 +1,20 @@
-" Some remaps
+ "Some remaps
 let mapleader = "\<Space>"
+" save
 nnoremap <Leader>w :w<CR>
+" quit
 nnoremap <Leader>q :q<CR>
+" rage quit (not saving changes)
 nnoremap <Leader>Q :q!<CR>
+" toggle nerdtree
 nnoremap <Leader>n :NERDTreeToggle<CR>
+" deactivate highlighting after searching
 nnoremap <Leader>h :nohlsearch<CR>
+" switch between splits
 nnoremap <Leader>s <C-w>w
+" toggle relative/absolute line numbering
 nnoremap <Leader>r :set relativenumber!<CR>
+" fixit command of ycm
 nnoremap <Leader>f :YcmCompleter FixIt<CR>
 
 " toggle relative and absolute line numbering automatically
@@ -101,6 +109,18 @@ let g:ycm_complete_in_comments=1
 
 " fix annoying problem with vim-autoclose and ycm completion window when hitting esc
 let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}
+
+"" UltiSnips config
+let g:UltiSnipsSnippetDir="~/.vim/UltiSnipsSnippets"
+let g:UltiSnipsSnippetDirectories=["UltiSnipsSnippets"]
+let g:SuperTabDefaultCompletionType    = '<C-n>'
+let g:SuperTabCrMapping                = 0
+let g:UltiSnipsExpandTrigger           = '<tab>'
+let g:UltiSnipsJumpForwardTrigger      = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
+let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
+
 
 " Solarized colorscheme
 "set background=dark
