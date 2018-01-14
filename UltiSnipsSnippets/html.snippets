@@ -1,0 +1,22 @@
+snippet htmltemplate
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>${1:Your title goes here!}</title>
+
+  <link rel="stylesheet" href="css/${2:Your CSS file goes here!}">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <script src="js/${3:Your javascript goes here!}"></script>
+</body>
+</html>
+$0
+endsnippet
