@@ -12,6 +12,11 @@ Vim config repository
 - **[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)** Code-Completion
 - **[autoclose](https://github.com/Valloric/YouCompleteMe)** automatically add closing parantheses and stuff
 - **[nerdcommenter](https://github.com/scrooloose/nerdcommenter)** (un-)comment blocks of code
+- **[happy_hacking color scheme](https://github.com/YorickPeterse/happy_hacking.vim)** Colorscheme
+- **[indentLine](https://github.com/Yggdroot/indentLine)** Indentation markers
+- **[UltiSnips](https://github.com/SirVer/ultisnips)** Snippets for spontaneous insertion
+- **[SuperTab](https://github.com/ervandew/supertab)** Tab magic to make UlttiSnips and YCM work together
+- **[Surround](https://github.com/tpope/vim-surround)** handle surrounding braces, qoutes, whatever
 
 ### Add new plugins
 *quick reminder for my amnesia self*
