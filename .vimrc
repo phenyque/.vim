@@ -138,6 +138,6 @@ if has("autocmd")
   " Highlight TODO, FIXME, NOTE, etc.
   if v:version > 701
     autocmd WinEnter,VimEnter * :silent! call matchadd('WarningMsg',  '\W\zs\(TODO\|FIXME\|CHANGED\|XXX\|BUG\|HACK\)')
-    autocmd Winenter,VimEnter * :silent! call matchadd('ErrorMsg', '\W\zs\(NOTE\|INFO\|IDEA\)')
+    autocmd Winenter,VimEnter * :silent! call matchadd('ErrorMsg', '\W\zs\(NOTE\|INFO\|IDEA\|ERROR\)')
   endif
 endif
