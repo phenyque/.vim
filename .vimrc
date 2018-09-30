@@ -98,7 +98,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" set python interpreter for ycmd to python 2
+" set python interpreter for ycmd to python 2 
 let g:ycm_server_python_interpreter = 'python2'
 
 " global compile flags for ycm
