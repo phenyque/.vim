@@ -127,7 +127,7 @@ let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>', '<Up>']
 "colorscheme solarized
 "" The next few lines are only needed when using happy_hacking scheme
 colorscheme happy_hacking
-hi search cterm=none ctermfg=black ctermbg=red
+hi search cterm=none ctermfg=black ctermbg=blue
 
 " highlight TODO in files
 "augroup HiglightTODO
