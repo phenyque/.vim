@@ -146,3 +146,4 @@ endif
 
 "" Nerdcommenter
 let g:NERDTrimTrailingWhitespace=1
+let g:NERDAltDelims_c = 1
