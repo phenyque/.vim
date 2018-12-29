@@ -3,20 +3,21 @@ Vim config repository
 
 ### For now includes:
 - **[ack](https://github.com/mileszs/ack.vim)** Recursive search
-- **[lightline](https://github.com/itchyny/lightline.vim)** Minimalistic vim statusline
-- **[syntastic](https://github.com/vim-syntastic/syntastic)** Syntax checking
-- **[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)** Multicursor support
+- **[autoclose](https://github.com/Valloric/YouCompleteMe)** automatically add closing parantheses and stuff
+- **[flake8](https://github.com/nvie/vim-flake8)** Python static syntax and style checker
 - **[fugitive](https://github.com/tpope/vim-fugitive)** Git integration
+- **[indentLine](https://github.com/Yggdroot/indentLine)** Indentation markers
+- **[lightline](https://github.com/itchyny/lightline.vim)** Minimalistic vim statusline
+- **[nerdcommenter](https://github.com/scrooloose/nerdcommenter)** (un-)comment blocks of code
 - **[nerdtree](https://github.com/scrooloose/nerdtree)** File tree viewer
 - **[solarized](https://github.com/altercation/vim-colors-solarized)** Colorscheme
-- **[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)** Code-Completion
-- **[autoclose](https://github.com/Valloric/YouCompleteMe)** automatically add closing parantheses and stuff
-- **[nerdcommenter](https://github.com/scrooloose/nerdcommenter)** (un-)comment blocks of code
-- **[happy_hacking color scheme](https://github.com/YorickPeterse/happy_hacking.vim)** Colorscheme
-- **[indentLine](https://github.com/Yggdroot/indentLine)** Indentation markers
-- **[UltiSnips](https://github.com/SirVer/ultisnips)** Snippets for spontaneous insertion
 - **[SuperTab](https://github.com/ervandew/supertab)** Tab magic to make UlttiSnips and YCM work together
 - **[Surround](https://github.com/tpope/vim-surround)** handle surrounding braces, qoutes, whatever
+- **[syntastic](https://github.com/vim-syntastic/syntastic)** Syntax checking
+- **[UltiSnips](https://github.com/SirVer/ultisnips)** Snippets for spontaneous insertion
+- **[vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)** Multicursor support
+- **[vim-pbrt](https://github.com/Phenylalaninquelle/vim-pbrt)** Syntax highlighting for pbrt scene files
+- **[YouCompleteMe](https://github.com/Valloric/YouCompleteMe)** Code-Completion
 
 ### Add new plugins
 *quick reminder for my amnesia self*
