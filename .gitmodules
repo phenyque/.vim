@@ -43,3 +43,6 @@
 [submodule "bundle/vim-pbrt"]
 	path = bundle/vim-pbrt
 	url = https://github.com/Phenylalaninquelle/vim-pbrt
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
