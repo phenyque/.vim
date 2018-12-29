@@ -3,7 +3,6 @@ Vim config repository
 
 ### For now includes:
 - **[ack](https://github.com/mileszs/ack.vim)** Recursive search
-- **[autoclose](https://github.com/Valloric/YouCompleteMe)** automatically add closing parantheses and stuff
 - **[flake8](https://github.com/nvie/vim-flake8)** Python static syntax and style checker
 - **[fugitive](https://github.com/tpope/vim-fugitive)** Git integration
 - **[indentLine](https://github.com/Yggdroot/indentLine)** Indentation markers
