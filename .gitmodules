@@ -37,9 +37,6 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "bundle/flake8"]
-	path = bundle/flake8
-	url = https://github.com/nvie/vim-flake8
 [submodule "bundle/vim-pbrt"]
 	path = bundle/vim-pbrt
 	url = https://github.com/Phenylalaninquelle/vim-pbrt
