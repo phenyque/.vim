@@ -43,7 +43,7 @@ filetype indent on
 
 " show line numbers and stuff
 set number
-set tw=79
+"set tw=79
 set nowrap
 set fo-=t
 set colorcolumn=80
@@ -59,7 +59,7 @@ autocmd! bufwritepost .vimrc source %
 
 " Copy and paste from system clipboard FIXME: this does not work somehow
 set clipboard=unnamed
-" Automatically activate paste mode when pasting in isert mode
+" Automatically activate paste mode when pasting in insert mode
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
 
@@ -73,6 +73,10 @@ endfunction
 
 " adjustment needed because lightline does not show up
 set laststatus=2
+
+"" Gitgutter settings
+" update time
+set updatetime=100
 
 " open nerdtree automatically when no file specified
 autocmd StdinReadPre * let s:std_in=1
