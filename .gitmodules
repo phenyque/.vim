@@ -7,9 +7,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
 [submodule "bundle/youcompleteme"]
 	path = bundle/youcompleteme
 	url = https://github.com/Valloric/YouCompleteMe.git
@@ -22,18 +19,12 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/autoclose"]
-	path = bundle/autoclose
-	url = https://github.com/Townk/vim-autoclose.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/happy_hacking"]
-	path = bundle/happy_hacking
-	url = git@github.com:YorickPeterse/happy_hacking.vim
 [submodule "bundle/indentLine"]
 	path = bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
@@ -43,6 +34,15 @@
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule "bundle/flake8"]
-	path = bundle/flake8
-	url = https://github.com/nvie/vim-flake8
+[submodule "bundle/vim-pbrt"]
+	path = bundle/vim-pbrt
+	url = https://github.com/Phenylalaninquelle/vim-pbrt
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
