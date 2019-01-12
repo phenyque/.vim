@@ -129,7 +129,7 @@ let g:ycm_filetype_blacklist = {}
 
 " Solarized colorscheme
 set background=dark
-colorscheme solarized
+colorscheme solarized8
 
 " highlight TODO in files
 "augroup HiglightTODO
