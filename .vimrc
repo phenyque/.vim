@@ -16,6 +16,8 @@ nnoremap <Leader>s <C-w>w
 nnoremap <Leader>r :set relativenumber!<CR>
 " fixit command of ycm
 nnoremap <Leader>f :YcmCompleter FixIt<CR>
+" search and replace word under current cursor
+nnoremap <F6> :%s/<C-r><C-w>/
 
 " toggle relative and absolute line numbering automatically
 :augroup numbertoggle
