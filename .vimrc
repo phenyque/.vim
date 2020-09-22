@@ -43,6 +43,9 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" fix for problem with solarized terminal colours and vim
+set term=xterm-256color
+
 " show line numbers and stuff
 set number
 "set tw=79
