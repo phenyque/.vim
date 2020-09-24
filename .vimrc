@@ -108,7 +108,7 @@ syntax on
 filetype plugin indent on
 
 " set python interpreter for ycmd to python 2 
-let g:ycm_server_python_interpreter = 'python2'
+let g:ycm_server_python_interpreter = 'python3'
 
 " global compile flags for ycm
 let g:ycm_global_ycm_extra_conf = '~/.vim/global_ycm_extra_conf.py'
