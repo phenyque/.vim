@@ -19,6 +19,8 @@ Plugin 'ycm-core/YouCompleteMe'
 Plugin 'psf/black'
 Plugin 'tpope/vim-eunuch'
 Plugin 'frazrepo/vim-rainbow'
+Plugin 'adelarsq/vim-matchit'
+Plugin 'yegappan/taglist'
 
 call vundle#end()
 filetype plugin indent on
@@ -92,7 +94,7 @@ autocmd! bufwritepost .vimrc source %
 
 " Copy and paste from system clipboard FIXME: this does not work on Ubuntu,
 " but on Mac ??
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " Automatically activate paste mode when pasting in insert mode
 let &t_SI .= "\<Esc>[?2004h"
