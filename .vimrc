@@ -17,6 +17,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'phenyque/vim-pbrt'
 Plugin 'ycm-core/YouCompleteMe'
 Plugin 'psf/black'
+Plugin 'tpope/vim-eunuch'
+Plugin 'frazrepo/vim-rainbow'
 
 call vundle#end()
 filetype plugin indent on
@@ -75,7 +77,6 @@ set term=xterm-256color
 
 " show line numbers and stuff
 set number
-"set tw=79
 set nowrap
 set fo-=t
 set colorcolumn=80
@@ -89,8 +90,10 @@ set encoding=utf-8
 " automatically reload .vimrc
 autocmd! bufwritepost .vimrc source %
 
-" Copy and paste from system clipboard FIXME: this does not work somehow
+" Copy and paste from system clipboard FIXME: this does not work on Ubuntu,
+" but on Mac ??
 set clipboard=unnamed
+
 " Automatically activate paste mode when pasting in insert mode
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
@@ -102,9 +105,6 @@ function! XTermPasteBegin()
   set paste
   return ""
 endfunction
-
-" adjustment needed because lightline does not show up
-set laststatus=2
 
 "" Gitgutter settings
 " update time
@@ -119,6 +119,9 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
 """ lightline config
+" this is needed because lightline does not show up
+set laststatus=2
+
 let g:lightline = {
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
@@ -129,12 +132,10 @@ let g:lightline = {
     \ },
     \ }
 
-" Pathogen plugin activation
-" execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" set python interpreter for ycmd to python 2 
+" set python interpreter for ycmd to python 3
 let g:ycm_server_python_interpreter = 'python3'
 
 " global compile flags for ycm
@@ -146,28 +147,14 @@ let g:ycm_complete_in_comments=1
 " fix annoying problem with vim-autoclose and ycm completion window when hitting esc
 let g:AutoClosePumvisible = {"ENTER": "", "ESC": ""}
 
-"" UltiSnips config
-let g:UltiSnipsSnippetDir="~/.vim/UltiSnipsSnippets"
-let g:UltiSnipsSnippetDirectories=["UltiSnipsSnippets"]
-let g:SuperTabDefaultCompletionType    = '<C-n>'
-let g:SuperTabCrMapping                = 0
-let g:UltiSnipsExpandTrigger           = '<TAB>'
-let g:UltiSnipsJumpForwardTrigger      = '<TAB>'
-let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
-let g:ycm_key_list_select_completion   = ['<C-j>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-k>', '<Up>']
-let g:ycm_filetype_blacklist = {}
-
+" raindow brackets for all file types
+let g:rainbow_active = 1
 
 " Solarized colorscheme
 set background=dark
 colorscheme solarized
 
 " highlight TODO in files
-"augroup HiglightTODO
-    "autocmd!
-    "autocmd WinEnter,VimEnter * :silent! call matchadd('Todo', 'TODO', -1)
-"augroup END
 if has("autocmd")
   " Highlight TODO, FIXME, NOTE, etc.
   if v:version > 701
