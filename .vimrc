@@ -16,14 +16,20 @@ Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'phenyque/vim-pbrt'
 Plugin 'ycm-core/YouCompleteMe'
-Plugin 'psf/black'
 Plugin 'tpope/vim-eunuch'
 Plugin 'frazrepo/vim-rainbow'
 Plugin 'adelarsq/vim-matchit'
 Plugin 'yegappan/taglist'
+Plugin 'jremmen/vim-ripgrep'
+Plugin 'psf/black'
+Plugin 'vim-syntastic/syntastic'
 
 call vundle#end()
 filetype plugin indent on
+
+" fzf plugin as installed via homebrew
+set rtp+=/usr/local/opt/fzf
+let g:fxf_layout = { 'down' : '40%' }
 
 let $PATH = '/usr/local/bin/:'.$PATH
 
@@ -47,6 +53,8 @@ nnoremap <Leader>r :set relativenumber!<CR>
 nnoremap <Leader>f :YcmCompleter FixIt<CR>
 " search and replace word under current cursor
 nnoremap <F6> :%s/<C-r><C-w>/
+" FZF start command
+nnoremap <Leader>z :FZF<CR>
 " keep register content after pasting
 xnoremap p "_dP
 
@@ -94,7 +102,7 @@ autocmd! bufwritepost .vimrc source %
 
 " Copy and paste from system clipboard FIXME: this does not work on Ubuntu,
 " but on Mac ??
-set clipboard=unnamedplus
+set clipboard=unnamed
 
 " Automatically activate paste mode when pasting in insert mode
 let &t_SI .= "\<Esc>[?2004h"
